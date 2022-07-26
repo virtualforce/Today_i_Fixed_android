@@ -48,8 +48,5 @@ Selector file code for reference:
 		<item android:drawable="@drawable/ic_show_password_green" android:state_checked="true"/>
 		<item android:drawable="@drawable/ic_hide_password_green"/>
 	</selector>
-<<<<<<< HEAD:How to mask un-mask password.md
 ```
-=======
-```
->>>>>>> 5ceaa4d4f653a73ebd4dc1f49cad76dbd3e62056:README - TogglePasswordInputLayoutThroughXML.md
+
