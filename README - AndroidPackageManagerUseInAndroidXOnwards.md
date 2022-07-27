@@ -6,16 +6,18 @@
 To use package manager in our Android project for latest AndroidX and onwards we first need write queries in our Android Manifest like below:
 ## Solution
 
-```<queries>
-        <package android:name="com.ktm.kualitee" />
-    </queries>
+```
+	<queries>
+           <package android:name="com.ktm.kualitee" />
+    	</queries>
 ```
 		
 If we need to perform some actions with Intent using package manager then we also need to define that action in our queries section to like this.
 Complete code is shared below
 		
     Android Manifest code
-```		    <queries>
+```		    
+   <queries>
         <!--        packages that you need to access using Android Package Manager-->
         <package android:name="com.ktm.kualitee" />
         <package android:name="com.microsoft.office.officehubrow" />
@@ -59,7 +61,8 @@ then we navigate the user to Google Play Store to install the app first before n
 For Example if you want get all defualt email apps packges from package manager then you need to write following code sinepet
 	
   Android Manifest code
-  ```<queries>
+  ```
+    <queries>
         <intent>
             <action android:name="android.intent.action.SEND"/>
             <data android:mimeType="*/*" />
@@ -68,8 +71,9 @@ For Example if you want get all defualt email apps packges from package manager 
   ```
   
   Activity/Fragment code
-```	@NonNull
-    Intent getEmailWithAttachmentIntent(
+```	
+	@NonNull
+    	Intent getEmailWithAttachmentIntent(
         @NonNull final String[] emailAddresses,
         @NonNull final String emailSubjectLine,
         @NonNull final String emailBody,
