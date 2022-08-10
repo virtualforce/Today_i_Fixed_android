@@ -23,9 +23,9 @@ android:layout_marginTop="100dp"
 android:inflatedId="@+id/inflatedviewsub"
 android:layout="@layout/custom_viewstub" />
 
-###id: ViewStub defined can be found using the id.
-###inflatedId: This attribute is used to set the id of the inflated View.
-###layout: This attribute is used to supply an identifier for the layout resource to inflate.
+### id: ViewStub defined can be found using the id.
+### inflatedId: This attribute is used to set the id of the inflated View.
+### layout: This attribute is used to supply an identifier for the layout resource to inflate.
 
 //declare
 private lateinit var mViewStub: ViewStub
@@ -35,6 +35,6 @@ private lateinit var mViewStub: ViewStub
 multiStopViewStub = findViewById(R.id.dropOffMultiAddressGroup)
 val inflatedView = mViewStub.inflate()
 
-###Now using inflatedView, we can find ids of items inside inflate view.
+### Now using inflatedView, we can find ids of items inside inflate view.
 
 When inflate() is invoked, the ViewStub is replaced by the inflated View and the inflated View is returned to its view hierarchy.
