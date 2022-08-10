@@ -24,9 +24,9 @@ android:inflatedId="@+id/inflatedviewsub"
 android:layout="@layout/custom_viewstub" />
 ```
 
- id: ViewStub defined can be found using the id.
- inflatedId: This attribute is used to set the id of the inflated View.
- layout: This attribute is used to supply an identifier for the layout resource to inflate.
+ id: ViewStub defined can be found using the id.  <br />
+ inflatedId: This attribute is used to set the id of the inflated View.  <br />
+ layout: This attribute is used to supply an identifier for the layout resource to inflate.  <br />
 
 ### declare
 
