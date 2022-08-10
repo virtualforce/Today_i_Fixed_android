@@ -15,25 +15,27 @@ ViewStub will be loaded only when you actually need it i.e when you set ViewStub
 
 # Solution :
 
-<ViewStub
+```<ViewStub
 android:id="@+id/viewStub"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:layout_marginTop="100dp"
 android:inflatedId="@+id/inflatedviewsub"
 android:layout="@layout/custom_viewstub" />
+```
 
-### id: ViewStub defined can be found using the id.
-### inflatedId: This attribute is used to set the id of the inflated View.
-### layout: This attribute is used to supply an identifier for the layout resource to inflate.
+ id: ViewStub defined can be found using the id.
+ inflatedId: This attribute is used to set the id of the inflated View.
+ layout: This attribute is used to supply an identifier for the layout resource to inflate.
 
-//declare
-private lateinit var mViewStub: ViewStub
+### declare
 
-//init
+```private lateinit var mViewStub: ViewStub```
 
-multiStopViewStub = findViewById(R.id.dropOffMultiAddressGroup)
-val inflatedView = mViewStub.inflate()
+### init
+
+```multiStopViewStub = findViewById(R.id.dropOffMultiAddressGroup)
+    val inflatedView = mViewStub.inflate()```
 
 ### Now using inflatedView, we can find ids of items inside inflate view.
 
