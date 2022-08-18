@@ -30,7 +30,8 @@ Make a new list of Sample class items out of the original list passed into the a
 ## Activity
  Here, the first important thing is to make the infiniteViewPager’s current item to position 1, as position 0 is taken by the fake last item.  <br />
 
-```infiniteViewPager.currentItem = 1
+```
+   infiniteViewPager.currentItem = 1
    onInfinitePageChangeCallback(list.size + 2)
 ```
 
