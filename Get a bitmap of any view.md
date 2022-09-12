@@ -1,19 +1,19 @@
-# Get a bitmap of any view.
+# Get a Bitmap of any View.
 
-# Problem :
+# Problem
+How to get a bitmap of any view
 
-How to get a bitmap of any view <br />
 
-#Environment :
+# Environment
+N/A
 
-N/A <br />
 
-# How you fix it :
-You Can used that to create an entire pdf page from a layout that turned into documentation and tutorials <br />
+# How you fix it
+You can use that to create an entire pdf page from a layout that turned into documentation and tutorials
 
-# Solution :
 
-you can get a bitmap of any view by using this function <br />
+# Solution
+you can get a bitmap of any view by using this function
 
 ```
 fun getBitmapFromView(view: View):Bitmap{
