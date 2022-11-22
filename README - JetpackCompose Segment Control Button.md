@@ -7,6 +7,7 @@ Here is a complete Jetpack compose with proper theme for segment control buttons
 ## Solution
 
 # Sample Demo Code
+
 @Preview
 @Composable fun SegmentedDemo() {
     MaterialTheme {
@@ -56,6 +57,7 @@ private const val PRESSED_UNSELECTED_ALPHA = .6f
 private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 
 ## Segment Control Function
+
 @Composable fun <T : Any> SegmentedControl(
     segments: List<T>,
     selectedSegment: T,
