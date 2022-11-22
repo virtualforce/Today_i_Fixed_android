@@ -8,6 +8,7 @@ Here is a complete Jetpack compose with proper theme for segment control buttons
 
 # Sample Demo Code
 
+```
 @Preview
 @Composable fun SegmentedDemo() {
     MaterialTheme {
@@ -60,8 +61,11 @@ private val SEGMENT_PADDING = 5.dp
 private const val PRESSED_UNSELECTED_ALPHA = .6f
 private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 
+```
+
 ## Segment Control Function
 
+```
 @Composable fun <T : Any> SegmentedControl(
     segments: List<T>,
     selectedSegment: T,
@@ -127,19 +131,24 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
     }
 }
 
+```
   
 /**
  * Wrapper around [Text] that is configured to display appropriately inside of a [SegmentedControl].
  */
    
+```
 @Composable fun SegmentText(text: String) {
     Text(text, maxLines = 1, overflow = Ellipsis, color = primaryColorWhite)
 }
+
+```
 
 /**
  * Draws the thumb (selected indicator) on a [SegmentedControl] track, underneath the [Segments].
  */
   
+```
 @Composable private fun Thumb(state: SegmentedControlState) {
     Box(
         Modifier
@@ -154,10 +163,13 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
     )
 }
 
+```
+
 /**
  * Draws dividers between segments. No dividers are drawn around the selected segment.
  */
-  
+
+```
 @Composable private fun Dividers(state: SegmentedControlState) {
     // Animate each divider independently.
     val alphas = (0 until state.segmentCount).map { i ->
@@ -183,10 +195,13 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
     }
 }
 
+```
+
 /**
  * Draws the actual segments in a [SegmentedControl].
  */
-  
+ 
+```
 @Composable private fun <T> Segments(
     state: SegmentedControlState,
     segments: List<T>,
@@ -361,10 +376,13 @@ private class SegmentedControlState {
     }
 }
 
+```
+
 /**
  * Copy of nullary waitForUpOrCancellation that works with bounds that may not be at 0,0.
  */
   
+```
 private suspend fun AwaitPointerEventScope.waitForUpOrCancellation(inBounds: Rect): PointerInputChange? {
     while (true) {
         val event = awaitPointerEvent(PointerEventPass.Main)
@@ -385,3 +403,5 @@ private suspend fun AwaitPointerEventScope.waitForUpOrCancellation(inBounds: Rec
         }
     }
 }
+
+```
