@@ -42,17 +42,21 @@ Here is a complete Jetpack compose with proper theme for segment control buttons
 private const val NO_SEGMENT_INDEX = -1
 
 /** Padding inside the track. */
+
 private val TRACK_PADDING = 2.dp
 
 private val TRACK_COLOR = primaryColorLightGrey//Color.LightGray.copy(alpha = .5f)
 
 /** Additional padding to inset segments and the thumb when pressed. */
+
 private val PRESSED_TRACK_PADDING = 1.dp
 
 /** Padding inside individual segments. */
+
 private val SEGMENT_PADDING = 5.dp
 
 /** Alpha to use to indicate pressed state when unselected segments are pressed. */
+
 private const val PRESSED_UNSELECTED_ALPHA = .6f
 private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 
@@ -123,9 +127,11 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
     }
 }
 
+  
 /**
  * Wrapper around [Text] that is configured to display appropriately inside of a [SegmentedControl].
  */
+   
 @Composable fun SegmentText(text: String) {
     Text(text, maxLines = 1, overflow = Ellipsis, color = primaryColorWhite)
 }
@@ -133,6 +139,7 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 /**
  * Draws the thumb (selected indicator) on a [SegmentedControl] track, underneath the [Segments].
  */
+  
 @Composable private fun Thumb(state: SegmentedControlState) {
     Box(
         Modifier
@@ -150,6 +157,7 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 /**
  * Draws dividers between segments. No dividers are drawn around the selected segment.
  */
+  
 @Composable private fun Dividers(state: SegmentedControlState) {
     // Animate each divider independently.
     val alphas = (0 until state.segmentCount).map { i ->
@@ -178,6 +186,7 @@ private val BACKGROUND_SHAPE = RoundedCornerShape(8.dp)
 /**
  * Draws the actual segments in a [SegmentedControl].
  */
+  
 @Composable private fun <T> Segments(
     state: SegmentedControlState,
     segments: List<T>,
@@ -240,6 +249,7 @@ private class SegmentedControlState {
      * thumb). When this scale is applied, exactly [PRESSED_TRACK_PADDING] will be added around the
      * element's usual size.
      */
+  
     var pressedSelectedScale by mutableStateOf(1f)
         private set
 
@@ -262,6 +272,7 @@ private class SegmentedControlState {
      * is the first or last segment, respectively. In those cases, the scale will also be translated so
      * that [PRESSED_TRACK_PADDING] will be added on the left or right edge.
      */
+  
     @SuppressLint("ModifierFactoryExtensionFunction")
     fun segmentScaleModifier(
         pressed: Boolean,
@@ -299,6 +310,7 @@ private class SegmentedControlState {
      *
      * Input will be reset if the [segmentCount] changes.
      */
+  
     val inputModifier = Modifier.pointerInput(segmentCount) {
         val segmentWidth = size.width / segmentCount
 
@@ -352,6 +364,7 @@ private class SegmentedControlState {
 /**
  * Copy of nullary waitForUpOrCancellation that works with bounds that may not be at 0,0.
  */
+  
 private suspend fun AwaitPointerEventScope.waitForUpOrCancellation(inBounds: Rect): PointerInputChange? {
     while (true) {
         val event = awaitPointerEvent(PointerEventPass.Main)
