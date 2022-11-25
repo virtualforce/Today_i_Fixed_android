@@ -1,4 +1,4 @@
-# Get a Bitmap of any View.
+# use qr scanner camera preview in JetPack Compose.
 
 # Problem
 How to use qr scanner camera preview in JetPack Compose 
