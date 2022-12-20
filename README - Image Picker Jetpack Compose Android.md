@@ -2,9 +2,9 @@
    How to use Image Picker with Camera and Gallery in Jetpack Compose Android.
 
 ## How you fix it
-   To use Image picker we you can use following code below to pick Image from Gallery or take Photo from Camera:
+   To use Image picker we you can use following code below to pick Image from Gallery or Take Photo from Camera:
 ## Solution
-   You need to right Activity for result launchers in your composable functions instead of writing them in your Activity. For this Google gives you            rememberLauncherForActivity for composable functions.
+   You need to write Activity for result launchers in your composable functions instead of writing them in your Activity. For this Google gives you            rememberLauncherForActivity for composable functions.
 
 ### Must include this code in your Android Manifest file for Image Picker
 ```
