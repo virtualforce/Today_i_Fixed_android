@@ -15,6 +15,7 @@ implementation "com.google.accompanist:accompanist-permissions:0.28.0"
 ### Warning
     The permission APIs are currently experimental and they could change at any time. All of the APIs are marked with the @ExperimentalPermissionsApi           annotation.
 
+### Your Composable Function Code Snippet
 ```
 // Camera permission state
 val cameraPermissionState = rememberPermissionState(
