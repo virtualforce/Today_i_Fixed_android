@@ -5,6 +5,8 @@
 Here is the complete detailed code below for creating Modal Bottom Sheet in Jetpack Compose Android:
 
 ## Solution
+To Show or hide bottom sheets you need to do it in coroutineScope.
+
 ```
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.*
@@ -43,7 +45,7 @@ fun MainScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Welcome to bottom sheet playground!",
+                text = "Welcome to Jetpack compose bottom sheet!",
                 modifier = Modifier.fillMaxWidth(),
                 style = MaterialTheme.typography.h4,
                 textAlign = TextAlign.Center
@@ -57,7 +59,7 @@ fun MainScreen() {
                     }
                 }
             ) {
-                Text(text = "Click to show bottom sheet")
+                Text(text = "Open bottom sheet")
             }
         }
     }
