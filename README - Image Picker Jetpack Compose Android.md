@@ -77,11 +77,13 @@
     imagePicker.launch("image/*")
 
 
-    //Before using this launcher you must need to get run time camera permissions first that are described in this link below:
-    //[Github]("https://github.com/talha46/Today_i_Fixed_android/blob/main/README%20-%20Android%20Runtime%20Permissions%20Jetpack%20Compose.md")
+    //Before using this launcher you must need to get run time camera permissions first that are described in the link described below:
 
     //Take photo from Camera
     val uri = ComposeFileProvider.getImageUri(context)
     imageUri = uri
     cameraLauncher.launch(uri)
 ```
+
+### Compose Runtime Permissions
+[Github]("https://github.com/talha46/Today_i_Fixed_android/blob/main/README%20-%20Android%20Runtime%20Permissions%20Jetpack%20Compose.md")
