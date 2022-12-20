@@ -77,7 +77,7 @@
     imagePicker.launch("image/*")
 
 
-    //Before using this launcher you must need to get run time camera permissions first that are described in the link described below:
+    //Before using this launcher you must need to get run time camera permissions first that are in the link described below:
 
     //Take photo from Camera
     val uri = ComposeFileProvider.getImageUri(context)
